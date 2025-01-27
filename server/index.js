@@ -14,7 +14,7 @@ const server = http.createServer(app);
 // Socket.io setup with CORS
 const io = socketIO(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://strikas.onrender.com",
     methods: ["GET", "POST"]
   }
 });
