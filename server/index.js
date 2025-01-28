@@ -14,7 +14,7 @@ const server = http.createServer(app);
 // Socket.io setup with CORS
 const io = socketIO(server, {
   cors: {
-    origin: "https://strikas.onrender.com",
+    origin: "https://soccer-bf05e.web.app",
     methods: ["GET", "POST"]
   }
 });
