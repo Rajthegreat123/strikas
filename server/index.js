@@ -27,6 +27,7 @@ app.use(cors({
   origin: 'https://soccer-bf05e.web.app', // Your Firebase Hosting URL
   credentials: true, // Allow credentials if needed
 }));
+app.options('*', cors());
 app.use(express.json());
 
 // Socket authentication middleware
