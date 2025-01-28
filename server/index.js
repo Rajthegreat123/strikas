@@ -23,7 +23,10 @@ const io = socketIO(server, {
 app.set('io', io);
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://soccer-bf05e.web.app', // Your Firebase Hosting URL
+  credentials: true, // Allow credentials if needed
+}));
 app.use(express.json());
 
 // Socket authentication middleware
